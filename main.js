@@ -1,7 +1,3 @@
-
-
-
-//problem1
 const findSum = function(array) {
  for (let i = 0; i < array.length; i++) {
   const element = array[i];
@@ -9,7 +5,7 @@ const findSum = function(array) {
  }
 };
 
-//problem 2
+
 let count = {}; 
 const findFrequency = function(array) {
     array.forEach(function(item) {
@@ -24,13 +20,12 @@ const findFrequency = function(array) {
   let obj = count;
  let least = Math.min (...Object.values(obj));
  let most = Math.max(...Object.values(obj));
-  
- return { most, least }
+  return { most, least }
   }
 };
 
 
-//problem 3
+
   const isPalindrome = function(str) { 
     var response = [];
 let leftToRight = str.toLowerCase().split(" ").join();
@@ -42,7 +37,9 @@ let rightToLeft= str.toLowerCase().split(" ").reverse().join();
  }
  return response;
 };
-//problem 4
+
+
+
 const largestPair = function(array) {
   let products = [];
 for (var i=0; i < array.length; i++) {
@@ -57,12 +54,36 @@ var largestProduct = Math.max(...products);
 return largestProduct;
 };
 
-//problem 5
+
 const removeParenth = function(str) {
-  // your code here - don't forget to return a string!
+let splitString = str.split('');
+splitString.splice(3,5);
+return splitString.join('');
 };
 
-//Problem 6
+Problem 6
 const scoreScrabble = function(str) {
-  // your code here - don't forget to return a number!
+let inputWord = str.toUpperCase().split('');
+  for (let i = 0; i < inputWord.length; i++) {
+    var ogInputWord = inputWord[i];
+  }
+    
+let points = {
+        1: ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'],
+        2: ['D', 'G'],
+        3: ['B', 'C', 'M', 'P'],
+        4: ['F', 'H', 'V', 'W', 'Y'],
+        5: ['K'],
+        8: ['J', 'X'],
+        10: ['Q', 'Z'],
+      };
+          var scrabblePoints = points[Object.keys(points)[0]]
+      for (let i = 0; i < scrabblePoints.length; i++) {
+      for (prop in points) {
+       if 
+      }
+    }
 };
+
+
+
