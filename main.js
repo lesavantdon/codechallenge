@@ -26,16 +26,14 @@ const findFrequency = function(array) {
 
 
 
-  const isPalindrome = function(str) { 
-    var response = [];
-let leftToRight = str.toLowerCase().split(" ").join();
-let rightToLeft= str.toLowerCase().split(" ").reverse().join();
+const isPalindrome = function(str) { 
+let leftToRight = str.toLowerCase().split("").join("");
+let rightToLeft= str.toLowerCase().split("").reverse().join("");
  if (leftToRight == rightToLeft) {
-      response.push('true'); 
+    return true; 
  } else {
-    response.push ('false');
+    return false;
  }
- return response;
 };
 
 
