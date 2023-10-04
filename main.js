@@ -8,8 +8,8 @@ const findSum = function(array) {
    
 
 
-let count = {}; 
 const findFrequency = function(array) {
+    let count = {}; 
     array.forEach(function(item) {
       if (count.hasOwnProperty(item)) {
         count[item] += 1;
