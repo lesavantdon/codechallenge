@@ -17,13 +17,15 @@ const findFrequency = function(array) {
         count[item] = 1;
       } 
     });
-  console.log(count);
-  for (prop in count) {
-  let obj = count;
- let least = Math.min (...Object.values(obj));
- let most = Math.max(...Object.values(obj));
-  return { most, least }
-  }
+   //count = {a: 4, b: 2, c: 2, d: 1}
+//let most = '';
+//let least = '';
+const values = Object.values(count)
+const lowest = Math.min.apply(null, values)
+let most = Object.entries(count).sort((x,y)=>y[1]-x[1])[0];
+const key = Object.keys(count).filter(function (x) { return count[x] === lowest })[0]
+
+return {most: most[0], least: key};
 };
 
 
