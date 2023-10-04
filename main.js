@@ -18,8 +18,6 @@ const findFrequency = function(array) {
       } 
     });
    //count = {a: 4, b: 2, c: 2, d: 1}
-//let most = '';
-//let least = '';
 const values = Object.values(count)
 const lowest = Math.min.apply(null, values)
 let most = Object.entries(count).sort((x,y)=>y[1]-x[1])[0];
